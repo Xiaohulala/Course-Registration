@@ -1,0 +1,2 @@
+INDEX VERSION 1.4+/Users/lingronghu/Downloads/CS/Backend/12. Course Registration/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3032598961.index

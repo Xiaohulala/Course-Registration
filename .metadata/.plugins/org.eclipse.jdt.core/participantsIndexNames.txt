@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+/Users/lingronghu/Downloads/CS/Backend/12. Course Registration/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3295983446.index
+/coursemanagement/src/main/java
+/Users/lingronghu/Downloads/CS/Backend/12. Course Registration/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2211742423.index
+/Course-Registration/src/main/java

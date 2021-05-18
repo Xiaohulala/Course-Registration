@@ -1,0 +1,10 @@
+package com.hu.configs;
+
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+public class TheSpringMvcDispatcherServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
+	@Override
+	protected Class<?>[] getRootConfigClasses(){
+		return null;
+	}
+}
