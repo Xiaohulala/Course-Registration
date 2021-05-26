@@ -48,8 +48,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` 
 VALUES 
-('marcel@gmail.com','12345',1),
-('lingrong@gmail.com','12345',1);
+('marcel@gmail.com','{noop}12345',1),
+('lingrong@gmail.com','{noop}12345',1);
 
  -- authorities
  DROP TABLE IF EXISTS `authorities`;
