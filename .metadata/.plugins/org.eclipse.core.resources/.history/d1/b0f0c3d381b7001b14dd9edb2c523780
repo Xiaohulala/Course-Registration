@@ -1,5 +1,0 @@
-package com.hu.configs;
-
-public class TheSpringMvcDispatcherServletInitializer extends AbstractAnnotationConfigDispatcherServlet{
-
-}

@@ -1,6 +1,0 @@
-package com.hu.configs;
-
-@Configuration
-public class MainConfig {
-
-}

@@ -1,0 +1,5 @@
+# JDBC connection properties
+jdbc.driver=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/coursereg?useSSL=false
+jdbc.user=root
+jdbc.password=15023173315

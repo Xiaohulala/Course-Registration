@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Insert title here</title>
+<title>Home Page</title>
 </head>
 <body>
 	Good luck!!!
