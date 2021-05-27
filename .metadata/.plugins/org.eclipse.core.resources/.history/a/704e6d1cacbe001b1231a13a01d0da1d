@@ -1,0 +1,17 @@
+package com.hu.user;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+
+
+@Controller
+@RequestMapping("/register")
+public class RegController {
+	@GetMapping("/showRegistrationForm")
+	public String showMyLoginPage(Model theModel) {
+		theModel.addAttribute("crmUser", new CrmUser());
+		return "registration-form";
+	}
+	
+
+}

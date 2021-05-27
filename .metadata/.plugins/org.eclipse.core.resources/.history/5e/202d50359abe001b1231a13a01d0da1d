@@ -1,0 +1,6 @@
+package com.hu.entity;
+
+@Entity()
+public class Course {
+
+}

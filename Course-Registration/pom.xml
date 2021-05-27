@@ -12,7 +12,8 @@
   <properties>
 		<springframework.version>5.2.1.RELEASE</springframework.version>
 		<springsecurity.version>5.2.1.RELEASE</springsecurity.version>
-
+		<hibernate.version>5.4.14.Final</hibernate.version>
+		
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
   </properties>
@@ -90,6 +91,34 @@
 		  <artifactId>c3p0</artifactId>
 		  <version>0.9.5.2</version>
 		</dependency>
+		
+	<!-- Hibernate Core -->
+		<dependency>
+		  <groupId>org.hibernate</groupId>
+		  <artifactId>hibernate-core</artifactId>
+		  <version>${hibernate.version}</version>
+		</dependency>
+	
+	<!-- Hibernate Validator -->
+		<dependency>
+		  <groupId>org.hibernate</groupId>
+		  <artifactId>hibernate-validator</artifactId>
+		  <version>6.0.7.Final</version>
+		</dependency>
+		
+	<!-- Spring Transactions -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+        
+    <!-- Spring ORM -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
 		
   </dependencies>
   

@@ -3,11 +3,14 @@ package com.hu.configs;
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
@@ -20,18 +23,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		// use jdbc authentication
 		auth.jdbcAuthentication().dataSource(securityDataSource);
-		
-		/*UserBuilder users = User.withDefaultPasswordEncoder();
-		auth.inMemoryAuthentication()
-			.withUser(users.username("Marcel").password("12345").roles("INSTRUCTOR"))
-			.withUser(users.username("Lingrong").password("12345").roles("STUDENT"));
-		*/
 	}
 	
 	@Override 
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests()
-		.anyRequest().authenticated()
+		.antMatchers("/").hasAnyRole("STUDENT", "INSTRUCTOR")
+		.antMatchers("/students/**").hasRole("STUDENT")
+		.antMatchers("/instructors/**").hasRole("INSTRUCTOR")
 		.and()
 		.formLogin()
 			.loginPage("/showMyLoginPage")
@@ -40,4 +39,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	
 	}
 	
+	// bcrypt bean definition
+	@Bean
+	public BCryptPasswordEncoder passwordEncoder() {
+		return new BCryptPasswordEncoder();
+	}
+	
+	// authenticationProvider bean definition
+	@Bean
+	public DaoAuthenticationProvider authenticationProvider() {
+		DaoAuthenticationProvider auth = new DaoAuthenticationProvider();
+		auth.setUserDetailsService(userDetailsService());
+		auth.setPasswordEncoder(passwordEncoder());
+		return auth;
+	}
 }

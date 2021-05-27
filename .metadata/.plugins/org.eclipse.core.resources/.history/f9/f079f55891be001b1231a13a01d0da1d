@@ -1,0 +1,10 @@
+package com.hu.validation;
+
+import java.lang.annotation.ElementType;
+
+@Constraint(validatedBy = FieldMatchValidator.class)
+@Target({ ElementType.TYPE, ElementType.ANNOTATION_TYPE })
+@Retention(RetentionPolicy.RUNTIME)
+public interface FieldMatch {
+
+}

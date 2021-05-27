@@ -1,0 +1,7 @@
+package com.hu.entity;
+
+@Entity
+@Table(name = "courses")
+public class Course {
+
+}

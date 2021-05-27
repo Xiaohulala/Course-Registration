@@ -1,0 +1,5 @@
+package com.hu.validation;
+
+public class EmailValidator implements ConstraintValidator<ValidEmail, String>{
+
+}

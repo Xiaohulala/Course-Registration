@@ -1,0 +1,7 @@
+package com.hu.entity;
+
+@Entity
+@Table(name = "authorities")
+public class Authorities {
+
+}

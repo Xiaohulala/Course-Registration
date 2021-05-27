@@ -65,3 +65,6 @@
 127.0.0.1 - - [26/May/2021:14:01:55 +0800] "GET /Course-Registration/showMyLoginPage?error HTTP/1.1" 200 2551
 127.0.0.1 - - [26/May/2021:14:02:06 +0800] "POST /Course-Registration/authenticateTheUser HTTP/1.1" 302 -
 127.0.0.1 - - [26/May/2021:14:02:06 +0800] "GET /Course-Registration/ HTTP/1.1" 200 100
+127.0.0.1 - - [26/May/2021:22:56:58 +0800] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [26/May/2021:22:56:59 +0800] "GET /Course-Registration/ HTTP/1.1" 302 -
+127.0.0.1 - - [26/May/2021:22:56:59 +0800] "GET /Course-Registration/showMyLoginPage HTTP/1.1" 200 2407

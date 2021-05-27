@@ -46,10 +46,11 @@ CREATE TABLE `users` (
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- password: 12345
 INSERT INTO `users` 
 VALUES 
-('marcel@gmail.com','{noop}12345',1),
-('lingrong@gmail.com','{noop}12345',1);
+('marcel@gmail.com','{bcrypt}$2a$10$6unxgtPiF6bq.tn/2NxgSOGhcVHHQKtTwdrJRPTDnbvpbXITfHTGi',1),
+('lingrong@gmail.com','{bcrypt}$2a$10$6unxgtPiF6bq.tn/2NxgSOGhcVHHQKtTwdrJRPTDnbvpbXITfHTGi',1);
 
  -- authorities
  DROP TABLE IF EXISTS `authorities`;
@@ -83,7 +84,7 @@ VALUES
 DROP TABLE IF EXISTS `courses`;
 CREATE TABLE `courses`(
 	`id` int(11) NOT NULL AUTO_INCREMENT,
-    `title` varchar(128) NOT NULL,
+    `name` varchar(128) NOT NULL,
     `instructor_id` int(11) NOT NULL,
     
     -- set primary key
@@ -121,10 +122,11 @@ CREATE TABLE `reviews`(
 -- course_student
 DROP TABLE IF EXISTS `course_student`;
 CREATE TABLE `course_student`(
+	`id` int(11) NOT NULL AUTO_INCREMENT,
 	`course_id` int(11) NOT NULL,
     `student_id` int(11) NOT NULL,
     
-    PRIMARY KEY(`course_id`, `student_id`),
+    PRIMARY KEY(`id`),
     
     CONSTRAINT `FK_COURSE_STUDENT_COURSE`
     FOREIGN KEY (`course_id`)

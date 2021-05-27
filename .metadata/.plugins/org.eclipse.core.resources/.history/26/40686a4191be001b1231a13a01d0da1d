@@ -1,0 +1,7 @@
+package com.hu.validation;
+
+@Constraint(validatedBy = FieldMatchValidator.class)
+
+public interface FieldMatch {
+
+}

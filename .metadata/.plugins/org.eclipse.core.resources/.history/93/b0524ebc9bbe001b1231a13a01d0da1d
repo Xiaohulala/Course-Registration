@@ -1,0 +1,13 @@
+package com.hu.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="course_student")
+public class CourseStudent {
+	@Id
+	@GeneratedType(strategy=GenerationType.IDENTITY)
+	@Column(name = "id")
+	private Integer id;
+}
