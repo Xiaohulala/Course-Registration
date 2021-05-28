@@ -1,0 +1,12 @@
+package com.hu.dao;
+
+import org.springframework.stereotype.Repository;
+
+
+@Repository
+public class RoleDaoImpl {
+	// need to inject the session factory
+	@Autowired
+	private SessionFactory sessionFactory;
+
+}

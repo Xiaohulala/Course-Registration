@@ -13,10 +13,10 @@ public class Review {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
-	private Integer id;
+	private int id;
 	
 	@Column(name="rating")
-	private Double rating;
+	private double rating;
 	
 	@Column(name="comment")
 	private String comment;

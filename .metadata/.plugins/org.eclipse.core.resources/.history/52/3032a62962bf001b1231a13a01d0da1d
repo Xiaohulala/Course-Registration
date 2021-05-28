@@ -1,0 +1,45 @@
+package com.hu.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import com.hu.dao.RoleDao;
+import com.hu.dao.UserDao;
+import com.hu.entity.User;
+import com.hu.user.CrmUser;
+
+public class UserServiceImpl implements UserService{
+	
+	// need to inject user DAO
+	@Autowired
+	private UserDao userDao;
+	
+	@Autowired
+	private RoleDao roleDao;
+	
+	@Autowired
+	private BCryptPasswordEncoder passwordEncoder;
+	
+	@Override
+	public User findByUserName(String userName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void save(CrmUser crmUser) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+}

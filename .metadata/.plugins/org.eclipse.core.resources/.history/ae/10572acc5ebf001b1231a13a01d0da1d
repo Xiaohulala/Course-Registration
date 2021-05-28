@@ -1,0 +1,6 @@
+package com.hu.dao;
+
+@Repository
+public class RoleDaoImpl {
+
+}

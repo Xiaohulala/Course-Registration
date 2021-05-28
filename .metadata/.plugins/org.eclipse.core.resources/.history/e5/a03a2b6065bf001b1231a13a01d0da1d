@@ -1,0 +1,5 @@
+package com.hu.dao;
+
+public interface InstructorDao {
+
+}

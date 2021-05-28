@@ -1,0 +1,34 @@
+package com.hu.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.hu.entity.Student;
+
+public class StudentDaoImpl implements StudentDao{
+	@Autowired
+	private SessionFactory sessionFactory;
+
+	@Override
+	public Student findStudentByFirstName(String theFirstName) {
+		Session currentSession = sessionFacotry.getCurrentSession();
+		Query<User> theQuery = currentSession.createQuery("From Student where firstName=:fName", Student.class);
+		theQuery.setParameter("fName", theFirstName);
+		
+		return null;
+	}
+
+	@Override
+	public Student findStudentByLastName(String theLastName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void save(Student student) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

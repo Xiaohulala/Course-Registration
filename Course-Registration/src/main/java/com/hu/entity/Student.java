@@ -17,7 +17,7 @@ public class Student {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name = "id")
-	private Integer id;
+	private int id;
 	
 	@Column(name = "first_name")
 	private String firstName;
