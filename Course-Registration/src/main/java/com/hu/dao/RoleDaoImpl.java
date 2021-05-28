@@ -15,8 +15,6 @@ public class RoleDaoImpl implements RoleDao{
 	@Autowired
 	private SessionFactory sessionFactory;
 
-	
-
 	@Override
 	public Authority findRoleByName(String theRoleName) {
 		// get the current hibernate session

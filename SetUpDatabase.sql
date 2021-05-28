@@ -55,11 +55,13 @@ VALUES
  -- authorities
  DROP TABLE IF EXISTS `authorities`;
 CREATE TABLE `authorities` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) NOT NULL,
   `authority` varchar(50) NOT NULL,
   `instructor_id` int(11) NULL,
   `student_id` int(11) NULL,
-  UNIQUE KEY `authorities_idx_1` (`username`,`authority`),
+	PRIMARY KEY (`id`),
+    
   CONSTRAINT `authorities_ibfk_1` 
   FOREIGN KEY (`username`) 
   REFERENCES `users` (`username`),
@@ -70,15 +72,15 @@ CREATE TABLE `authorities` (
     ON DELETE NO ACTION ON UPDATE NO ACTION,
     
     CONSTRAINT `authorities_stu`
- FOREIGN KEY (`student_id`)
+	FOREIGN KEY (`student_id`)
     REFERENCES `students` (`id`)
     ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `authorities` 
 VALUES 
-('lingrong@gmail.com','ROLE_STUDENT', NULL, 1),
-('marcel@gmail.com', 'ROLE_INSTRUCTOR', 2, NULL);
+(1, 'lingrong@gmail.com','ROLE_STUDENT', NULL, 1),
+(2, 'marcel@gmail.com', 'ROLE_INSTRUCTOR', 2, NULL);
 
 -- course
 DROP TABLE IF EXISTS `courses`;

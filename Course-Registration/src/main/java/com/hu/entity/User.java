@@ -1,19 +1,15 @@
 package com.hu.entity;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "users")
 public class User {
 	@Id
-	@OneToOne(cascade=CascadeType.ALL)
-	@JoinColumn(name="username")
+	@Column(name="username")
 	private String userName;
 	
 	@Column(name = "password")

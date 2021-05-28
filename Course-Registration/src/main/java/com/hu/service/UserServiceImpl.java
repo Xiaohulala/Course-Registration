@@ -1,6 +1,13 @@
 package com.hu.service;
 
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.stream.Collectors;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -76,11 +83,20 @@ public class UserServiceImpl implements UserService{
 	}
 	
 	@Override
-	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		// TODO Auto-generated method stub
-		return null;
+	@Transactional
+	public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
+		User user = userDao.findByUserName(userName);
+		Authority role = roleDao.findRoleByName(userName);
+		Collection<Authority> roles = (Collection<Authority>) new List ();
+		roles.add(role);
+		if (user == null) {
+			throw new UsernameNotFoundException("Invalid username or password.");
+		}
+		return new org.springframework.security.core.userdetails.User(user.getUserName(), user.getPassword(), mapRolesToAuthorities(roles));
 	}
-
-
+	
+	private Collection<? extends GrantedAuthority> mapRolesToAuthorities(Collection<Authority> roles) {
+		return roles.stream().map(role -> new SimpleGrantedAuthority(role.getRole())).collect(Collectors.toList());
+	}
 
 }
