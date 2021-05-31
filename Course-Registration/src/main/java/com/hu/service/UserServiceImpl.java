@@ -1,7 +1,6 @@
 package com.hu.service;
 
 import java.awt.List;
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.stream.Collectors;
 
@@ -59,26 +58,30 @@ public class UserServiceImpl implements UserService{
 		user.setPassword(passwordEncoder.encode(crmUser.getPassword()));
 		userDao.save(user);
 		
-		//role
-		Authority role = new Authority();
-		role.setRole(crmUser.getRole());
-		roleDao.save(role);
-		
+		Instructor instructor = new Instructor();
+		Student student = new Student();
+
 		// instructor
-		if(crmUser.getRole().equals("Instructor")) {
-			Instructor instructor = new Instructor();
+		if(crmUser.getRole().equals("ROLE_INSTRUCTOR")) {
 			instructor.setFirstName(crmUser.getFirstName());
 			instructor.setLastName(crmUser.getLastName());
 			instructor.setEmail(crmUser.getUserName());
 			instructorDao.save(instructor);
 		}
 		else {
-			Student student = new Student();
 			student.setFirstName(crmUser.getFirstName());
 			student.setLastName(crmUser.getLastName());
 			student.setEmail(crmUser.getUserName());
 			studentDao.save(student);
 		}
+		//role
+		Authority role = new Authority();
+		role.setRole(crmUser.getRole());
+		role.setUser(user);
+		if(crmUser.getRole().equals("ROLE_INSTRUCTOR"))
+			role.setInstructor(instructor);
+		else role.setStudent(student);
+		roleDao.save(role);
 		
 	}
 	

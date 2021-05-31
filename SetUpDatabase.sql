@@ -41,16 +41,17 @@ VALUES
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `username` varchar(50) NOT NULL,
-  `password` char(68) NOT NULL,
+  `password` char(80) NOT NULL,
   `enabled` tinyint(1) NOT NULL,
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- password: 12345
+-- https://www.bcryptcalculator.com/
 INSERT INTO `users` 
 VALUES 
-('marcel@gmail.com','{bcrypt}$2a$10$6unxgtPiF6bq.tn/2NxgSOGhcVHHQKtTwdrJRPTDnbvpbXITfHTGi',1),
-('lingrong@gmail.com','{bcrypt}$2a$10$6unxgtPiF6bq.tn/2NxgSOGhcVHHQKtTwdrJRPTDnbvpbXITfHTGi',1);
+('marcel@gmail.com','$2a$10$OiyDDKyaM7uubfdVbltldOJdlLXm6M0x2RuTmOgK5AoABZsQNbMce',1),
+('lingrong@gmail.com','$2a$10$OiyDDKyaM7uubfdVbltldOJdlLXm6M0x2RuTmOgK5AoABZsQNbMce',1);
 
  -- authorities
  DROP TABLE IF EXISTS `authorities`;

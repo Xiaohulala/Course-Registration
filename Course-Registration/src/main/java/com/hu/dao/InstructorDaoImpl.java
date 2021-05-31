@@ -31,7 +31,7 @@ public class InstructorDaoImpl implements InstructorDao{
 	@Override
 	public Instructor findInstructorByLastName(String theLastName) {
 		Session currentSession = sessionFactory.getCurrentSession();
-		Query<Instructor> theQuery = currentSession.createQuery("From Instructor where lastName:=lName", Instructor.class);
+		Query<Instructor> theQuery = currentSession.createQuery("from Instructor where lastName:=lName", Instructor.class);
 		Instructor theInstructor = null;
 		try {
 			theInstructor = theQuery.getSingleResult();

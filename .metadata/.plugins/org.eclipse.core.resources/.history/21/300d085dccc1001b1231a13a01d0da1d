@@ -1,0 +1,13 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+</head>
+<body>
+	Good luck!!!
+	
+	<form:from action="${pageContext.request.contextPath}/logout"
+</body>
+</html>

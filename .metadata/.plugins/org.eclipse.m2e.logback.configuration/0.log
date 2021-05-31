@@ -3673,3 +3673,199 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.hibernate
 2021-05-28 16:04:11,352 [Worker-677: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2021-05-28 16:04:11,353 [Worker-677: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2021-05-28 16:04:11,353 [Worker-677: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 09:19:37,412 [Worker-1044: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 09:19:37,460 [Worker-1044: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 09:19:37,469 [Worker-1044: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 09:19:37,469 [Worker-1044: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 09:22:30,799 [Worker-1045: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 09:22:30,845 [Worker-1045: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 09:22:30,848 [Worker-1045: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 09:22:30,848 [Worker-1045: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 09:23:01,292 [Worker-1042: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 09:23:01,324 [Worker-1042: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 09:23:01,330 [Worker-1042: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 09:23:01,331 [Worker-1042: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 09:24:54,639 [Worker-1039: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 09:24:54,659 [Worker-1039: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 09:24:54,664 [Worker-1039: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 09:24:54,664 [Worker-1039: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:10:18,866 [Worker-1056: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:10:18,906 [Worker-1056: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:10:18,911 [Worker-1056: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:10:18,912 [Worker-1056: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:10:57,444 [Worker-1063: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:10:57,445 [Worker-1063: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:10:57,445 [Worker-1063: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:10:57,446 [Worker-1063: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:17:03,705 [Worker-1072: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:17:03,717 [Worker-1072: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:17:03,720 [Worker-1072: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:17:03,721 [Worker-1072: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:17:31,364 [Worker-1069: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:17:31,365 [Worker-1069: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:17:31,366 [Worker-1069: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:17:31,366 [Worker-1069: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:18:11,524 [Worker-1069: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:18:11,530 [Worker-1069: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:18:11,536 [Worker-1069: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:18:11,536 [Worker-1069: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:18:53,480 [Worker-1073: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:18:53,481 [Worker-1073: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:18:53,482 [Worker-1073: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:18:53,482 [Worker-1073: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:19:18,043 [Worker-1074: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:19:18,044 [Worker-1074: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:19:18,045 [Worker-1074: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:19:18,045 [Worker-1074: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:23:52,640 [Worker-1061: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:23:52,665 [Worker-1061: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 10:23:52,670 [Worker-1061: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:23:52,670 [Worker-1061: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:24:00,397 [Worker-1066: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:24:00,398 [Worker-1066: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 10:24:00,399 [Worker-1066: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:24:00,399 [Worker-1066: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:24:11,651 [Worker-1073: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:24:11,651 [Worker-1073: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 10:24:11,664 [Worker-1073: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:24:11,664 [Worker-1073: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:24:18,790 [Worker-1072: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:24:18,791 [Worker-1072: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 10:24:18,791 [Worker-1072: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:24:18,792 [Worker-1072: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:24:48,740 [Worker-1067: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:24:48,741 [Worker-1067: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 10:24:48,742 [Worker-1067: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:24:48,742 [Worker-1067: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:25:21,738 [Worker-1069: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:25:21,740 [Worker-1069: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 10:25:21,740 [Worker-1069: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:25:21,740 [Worker-1069: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:25:30,687 [Worker-1066: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:25:30,687 [Worker-1066: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 10:25:30,688 [Worker-1066: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:25:30,688 [Worker-1066: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:32:29,129 [Worker-1078: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:32:29,157 [Worker-1078: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 10:32:29,163 [Worker-1078: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:32:29,164 [Worker-1078: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:32:40,818 [Worker-1081: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:32:40,819 [Worker-1081: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 10:32:40,821 [Worker-1081: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:32:40,822 [Worker-1081: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:32:57,124 [Worker-1081: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:32:57,125 [Worker-1081: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 10:32:57,125 [Worker-1081: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:32:57,125 [Worker-1081: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:33:25,284 [Worker-1080: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:33:25,286 [Worker-1080: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 10:33:25,286 [Worker-1080: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:33:25,286 [Worker-1080: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:34:05,287 [Worker-1080: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:34:05,288 [Worker-1080: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 10:34:05,288 [Worker-1080: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:34:05,289 [Worker-1080: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:35:23,903 [Worker-1079: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:35:23,911 [Worker-1079: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:35:23,912 [Worker-1079: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:35:23,915 [Worker-1079: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:35:40,078 [Worker-1083: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:35:40,097 [Worker-1083: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:35:40,102 [Worker-1083: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:35:40,103 [Worker-1083: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:36:31,599 [Worker-1081: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:36:31,604 [Worker-1081: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:36:31,607 [Worker-1081: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:36:31,607 [Worker-1081: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:37:20,450 [Worker-1082: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:37:20,453 [Worker-1082: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:37:20,454 [Worker-1082: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:37:20,454 [Worker-1082: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:43:44,974 [Worker-1088: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:43:44,998 [Worker-1088: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:43:45,001 [Worker-1088: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:43:45,002 [Worker-1088: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:43:47,542 [Worker-1079: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:43:47,543 [Worker-1079: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:43:47,543 [Worker-1079: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:43:47,543 [Worker-1079: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:46:14,790 [Worker-1088: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:46:14,804 [Worker-1088: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:46:14,806 [Worker-1088: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:46:14,806 [Worker-1088: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:46:18,007 [Worker-1088: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:46:18,007 [Worker-1088: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:46:18,007 [Worker-1088: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:46:18,007 [Worker-1088: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:46:19,191 [Worker-1079: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:46:19,192 [Worker-1079: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:46:19,192 [Worker-1079: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:46:19,192 [Worker-1079: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 10:58:34,554 [Worker-1095: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:58:34,561 [Worker-1095: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 10:58:34,562 [Worker-1095: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 10:58:34,563 [Worker-1095: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 11:02:08,677 [Worker-1096: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 11:02:08,694 [Worker-1096: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 11:02:08,700 [Worker-1096: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 11:02:08,701 [Worker-1096: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 11:02:38,897 [Worker-1092: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 11:02:38,898 [Worker-1092: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 11:02:38,899 [Worker-1092: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 11:02:38,899 [Worker-1092: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 11:05:35,615 [Worker-1096: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 11:05:35,625 [Worker-1096: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 11:05:35,627 [Worker-1096: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 11:05:35,627 [Worker-1096: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 11:11:44,658 [Worker-1090: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 11:11:44,668 [Worker-1090: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 11:11:44,669 [Worker-1090: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 11:11:44,670 [Worker-1090: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 11:19:57,638 [Worker-1109: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 11:19:57,645 [Worker-1109: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 11:19:57,650 [Worker-1109: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 11:19:57,653 [Worker-1109: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 11:51:19,285 [Worker-1120: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 11:51:19,295 [Worker-1120: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 11:51:19,304 [Worker-1120: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 11:51:19,305 [Worker-1120: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 12:01:21,994 [Worker-1132: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:01:22,017 [Worker-1132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 12:01:22,020 [Worker-1132: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:01:22,020 [Worker-1132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 12:03:11,062 [Worker-1132: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:03:11,068 [Worker-1132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 12:03:11,069 [Worker-1132: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:03:11,070 [Worker-1132: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 12:52:10,356 [Worker-1167: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:52:10,409 [Worker-1167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-05-31 12:52:10,418 [Worker-1167: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:52:10,420 [Worker-1167: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 12:54:07,157 [Worker-1164: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:54:07,163 [Worker-1164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 12:54:07,165 [Worker-1164: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:54:07,166 [Worker-1164: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 12:54:46,027 [Worker-1170: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:54:46,029 [Worker-1170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 12:54:46,038 [Worker-1170: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:54:46,038 [Worker-1170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 12:55:04,460 [Worker-1168: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:55:04,461 [Worker-1168: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 12:55:04,462 [Worker-1168: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:55:04,462 [Worker-1168: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 12:55:25,127 [Worker-1168: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:55:25,143 [Worker-1168: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 12:55:25,146 [Worker-1168: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:55:25,146 [Worker-1168: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 12:55:34,386 [Worker-1170: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:55:34,386 [Worker-1170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 12:55:34,387 [Worker-1170: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:55:34,387 [Worker-1170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 12:55:36,408 [Worker-1170: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:55:36,409 [Worker-1170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 12:55:36,409 [Worker-1170: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:55:36,409 [Worker-1170: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources
+2021-05-31 12:55:45,802 [Worker-1172: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:55:45,803 [Worker-1172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-05-31 12:55:45,803 [Worker-1172: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2021-05-31 12:55:45,803 [Worker-1172: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/lingronghu/Downloads/CS/Backend/12. Course Registration/Course-Registration/src/test/resources

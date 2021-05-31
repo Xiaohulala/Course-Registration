@@ -103,8 +103,8 @@
 						<div style="margin-bottom: 25px" class="input-group">
 							<form:errors path="role" cssClass="error" />
 
-							<form:radiobutton path="role" value="Student" /> Student &nbsp &nbsp
-							<form:radiobutton path="role" value="Instructor"/> Instructor 
+							<form:radiobutton path="role" value="ROLE_STUDENT" /> Student &nbsp &nbsp
+							<form:radiobutton path="role" value="ROLE_INSTRUCTOR"/> Instructor 
 						</div>
 						
 						

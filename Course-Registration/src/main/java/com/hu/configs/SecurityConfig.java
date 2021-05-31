@@ -19,6 +19,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	@Autowired
 	private DataSource securityDataSource;
 	
+ 
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		// use jdbc authentication
@@ -35,7 +36,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		.formLogin()
 			.loginPage("/showMyLoginPage")
 			.loginProcessingUrl("/authenticateTheUser")
-			.permitAll();
+			.permitAll()
+		.and()
+		.logout().permitAll()
+		.and()
+		.exceptionHandling().accessDeniedPage("/access-denied");
 	
 	}
 	
