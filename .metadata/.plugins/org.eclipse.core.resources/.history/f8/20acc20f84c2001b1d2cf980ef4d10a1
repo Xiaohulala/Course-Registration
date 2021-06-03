@@ -1,0 +1,5 @@
+package com.hu.configs;
+
+public class CustomAuthenticationSuccessHandler {
+
+}

@@ -1,0 +1,26 @@
+package com.hu.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class HomeController {
+	@Autowired
+	private CustomerDao customerDao;
+	@GetMapping("/")
+	public String showHome() {
+		return "home";
+	}
+	
+	@GetMapping("/instructors")
+	public String showInstructorsHome() {
+		return "instructors-home";
+	}
+	
+	@GetMapping("/students")
+	public String showStudentsHome() {
+		return "students-home";
+	}
+	
+}

@@ -1,0 +1,5 @@
+package com.hu.controllers;
+
+public class InstructorController {
+
+}

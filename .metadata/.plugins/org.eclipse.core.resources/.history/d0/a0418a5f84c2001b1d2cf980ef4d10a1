@@ -1,0 +1,8 @@
+package com.hu.configs;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class CustomAuthenticationSuccessHandler implements AuthenticationSucessHandler{
+
+}

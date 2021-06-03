@@ -100,6 +100,10 @@ CREATE TABLE `courses`(
     ON DELETE NO ACTION ON UPDATE NO ACTION
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+INSERT INTO `courses` 
+VALUES 
+(1, 'Linear Algebra','2');
+
 -- review
 DROP TABLE IF EXISTS `reviews`;
 CREATE TABLE `reviews`(

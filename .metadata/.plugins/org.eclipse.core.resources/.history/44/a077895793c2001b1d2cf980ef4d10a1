@@ -1,0 +1,27 @@
+package com.hu.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.hu.entity.Course;
+
+@Repository
+public class CourseDaoImpl implements CourseDao{
+	@Autowired
+	private SessionFactory sessionFactory;
+	
+	@Transactional
+	@Override
+	public List<Course> getCourses() {
+		Session curretnSession = sessionFactory.getCurrentSession();
+		Query<Courses> theQuery = 
+				currentSession.createQuery("from Course", Customer.class);
+		return null;
+	}
+
+}

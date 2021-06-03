@@ -17,6 +17,8 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
@@ -26,7 +28,7 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 @ComponentScan("com.hu")
 @PropertySource("classpath:mysql.properties")
 @EnableTransactionManagement
-public class MainConfig {
+public class MainConfig implements WebMvcConfigurer{
 	// set up variable to hold the properties
 	@Autowired
 	private Environment env; 
@@ -109,4 +111,12 @@ public class MainConfig {
 
 		return txManager;
 	}	
+	
+	// configure the format for the forms
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry
+          .addResourceHandler("/resources/**")
+          .addResourceLocations("/resources/"); 
+    }	
 }

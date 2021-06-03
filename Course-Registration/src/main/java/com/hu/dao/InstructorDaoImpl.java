@@ -5,6 +5,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.hu.entity.Instructor;
 
@@ -12,26 +13,13 @@ import com.hu.entity.Instructor;
 public class InstructorDaoImpl implements InstructorDao{
 	@Autowired
 	private SessionFactory sessionFactory;
-	
-	@Override
-	public Instructor findInstructorByFirstName(String theFirstName) {
-		Session currentSession = sessionFactory.getCurrentSession();
-			
-		Query<Instructor> theQuery = currentSession.createQuery("from Instructor where firstName:=fName", Instructor.class);
-		theQuery.setParameter("fName", theFirstName);
-		Instructor theInstructor = null;
-		try {
-			theInstructor = theQuery.getSingleResult();
-		} catch(Exception e) {
-			theInstructor = null;
-		}
-		return theInstructor;
-	}
 
 	@Override
-	public Instructor findInstructorByLastName(String theLastName) {
+	@Transactional
+	public Instructor findInstructorByUserName(String theUserName) {
 		Session currentSession = sessionFactory.getCurrentSession();
-		Query<Instructor> theQuery = currentSession.createQuery("from Instructor where lastName:=lName", Instructor.class);
+		Query<Instructor> theQuery = currentSession.createQuery("from Instructor where email=:uName", Instructor.class);
+		theQuery.setParameter("uName", theUserName);
 		Instructor theInstructor = null;
 		try {
 			theInstructor = theQuery.getSingleResult();
@@ -45,6 +33,14 @@ public class InstructorDaoImpl implements InstructorDao{
 	public void save(Instructor theInstructor) {
 		Session currentSession = sessionFactory.getCurrentSession();
 		currentSession.saveOrUpdate(theInstructor);
+	}
+
+	@Override
+	@Transactional
+	public void addCourse(Instructor theInstructor) {
+		Session currentSession = sessionFactory.getCurrentSession();
+
+		
 	}
 
 }

@@ -1,10 +1,13 @@
 package com.hu.entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -18,7 +21,47 @@ public class Course {
 	@Column(name = "name")
 	private String name;
 	
-	@Column(name = "instructor_id")
-	private Integer instructorId;
+	@ManyToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="instructor_id")
+	private Instructor instructor;
+	
+	// Constructor
+	public Course() {}
+	
+	public Course(String name) {
+		this.name = name;
+	}
 
+
+	// getters & setters
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Instructor getInstructor() {
+		return instructor;
+	}
+
+	public void setInstructor(Instructor instructor) {
+		this.instructor = instructor;
+	}
+
+	//toString
+	@Override
+	public String toString() {
+		return "Course [id=" + id + ", name=" + name + ", instructor=" + instructor + "]";
+	}
+	
 }
