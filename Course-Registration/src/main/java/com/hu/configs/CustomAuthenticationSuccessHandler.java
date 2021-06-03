@@ -12,6 +12,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -26,14 +27,15 @@ public class CustomAuthenticationSuccessHandler implements AuthenticationSuccess
 	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
 			Authentication authentication) throws IOException, ServletException {
 		Set<String> roles = AuthorityUtils.authorityListToSet(authentication.getAuthorities());
+		UserDetails userPrincipal = (UserDetails) authentication.getPrincipal();
+		HttpSession session = request.getSession();
+		session.setAttribute("username", userPrincipal.getUsername());
 		
-		if(roles.contains("ROLE_INSTRUCTOR")) {
-			UserDetails userPrincipal = (UserDetails) authentication.getPrincipal();
-			response.addCookie(new Cookie("username", userPrincipal.getUsername()));
+		if(roles.contains("ROLE_INSTRUCTOR")) 
 			response.sendRedirect("instructors/");
-		}
-		else response.sendRedirect("students/");
 		
+		else response.sendRedirect("students/");
+
 	}
 
 }

@@ -5,7 +5,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.hu.entity.Instructor;
 
@@ -15,7 +14,6 @@ public class InstructorDaoImpl implements InstructorDao{
 	private SessionFactory sessionFactory;
 
 	@Override
-	@Transactional
 	public Instructor findInstructorByUserName(String theUserName) {
 		Session currentSession = sessionFactory.getCurrentSession();
 		Query<Instructor> theQuery = currentSession.createQuery("from Instructor where email=:uName", Instructor.class);
@@ -35,12 +33,8 @@ public class InstructorDaoImpl implements InstructorDao{
 		currentSession.saveOrUpdate(theInstructor);
 	}
 
-	@Override
-	@Transactional
-	public void addCourse(Instructor theInstructor) {
-		Session currentSession = sessionFactory.getCurrentSession();
 
-		
-	}
+
+	
 
 }

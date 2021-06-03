@@ -21,25 +21,24 @@ import com.hu.dao.CourseDao;
 import com.hu.dao.InstructorDao;
 import com.hu.entity.Course;
 import com.hu.entity.Instructor;
+import com.hu.service.CourseService;
+import com.hu.service.InstructorService;
 
 @Controller
 @RequestMapping("/instructors")
 @SessionAttributes("username")
 public class InstructorController {
 	@Autowired
-	private CourseDao courseDao;
+	private CourseService courseService;
 	
 	@Autowired
-	private InstructorDao instructorDao;
+	private InstructorService instructorService;
 	
 	@GetMapping("/")
-	public String showInstructorsHome(Model theModel, HttpServletRequest request, ModelMap modelMap, @ModelAttribute String userName) {
-		Cookie[] arr = request.getCookies();
-		userName = null;
-		for(Cookie c : arr)
-			if(c.getName().equals("username"))
-				userName = c.getValue();
-		List<Course> theCourses = courseDao.getCourses(instructorDao.findInstructorByUserName(userName)) ;
+	public String showInstructorsHome(Model theModel, HttpServletRequest request, ModelMap modelMap) {
+		String userName = (String) request.getSession().getAttribute("username");
+
+		List<Course> theCourses = courseService.getCourses(instructorService.findInstructorByUserName(userName)) ;
 		
 		theModel.addAttribute("courses", theCourses);
 		modelMap.addAttribute("username", userName);
@@ -60,16 +59,22 @@ public class InstructorController {
 	public String saveCustomer(@ModelAttribute("course") Course theCourse, ModelMap modelMap) {
 		
 		String useName = (String) modelMap.get("username");
-		theCourse.setInstructor(instructorDao.findInstructorByUserName(useName));
-		System.out.println("SDADSDADASDASDASDASDASDA: " + theCourse);
-		courseDao.save(theCourse);
+		theCourse.setInstructor(instructorService.findInstructorByUserName(useName));
+		courseService.save(theCourse);
 		
 		return "redirect:/instructors/";
 	}
 	
 	@GetMapping("/delete")
 	public String deleteCourse(@RequestParam("courseId") int theId) {
-		courseDao.deleteCourse(theId);
+		courseService.deleteCourse(theId);
 		return "redirect:/instructors/";
+	}
+	
+	@GetMapping("/search")
+	public String searchCourse(@RequestParam("theSearchName") String searchName, Model theModel) {
+		List<Course> courses = courseService.searchCourses(searchName);
+		theModel.addAttribute("courses", courses);
+		return "instructors-home";
 	}
 }

@@ -17,7 +17,6 @@ public class CourseDaoImpl implements CourseDao{
 	@Autowired
 	private SessionFactory sessionFactory;
 	
-	@Transactional
 	@Override
 	public List<Course> getCourses(Instructor theInstructor) {
 		Session currentSession = sessionFactory.getCurrentSession();
@@ -33,20 +32,38 @@ public class CourseDaoImpl implements CourseDao{
 	}
 
 	@Override
-	@Transactional
 	public void save(Course theCourse) {
 		Session currentSession = sessionFactory.getCurrentSession();
 		currentSession.save(theCourse);
 	}
 
 	@Override
-	@Transactional
 	public void deleteCourse(int courseId) {
 		Session currentSession = sessionFactory.getCurrentSession();
 		Query theQuery = currentSession.createQuery("delete from Course where id=:theId");
 		theQuery.setParameter("theId", courseId);
 		theQuery.executeUpdate();
 		
+	}
+
+	@Override
+	public List<Course> searchCourses(String searchName) {
+		Session currentSession = sessionFactory.getCurrentSession();
+		Query theQuery = null;
+		if(searchName != null && searchName.trim().length() > 0) {
+			theQuery = currentSession.createQuery("from Course where lower(name) like :searchName", Course.class);
+			theQuery.setParameter("searchName", "%" + searchName.toLowerCase() + "%");
+		} else {
+			theQuery = currentSession.createQuery("from Course", Course.class);
+		}
+		List<Course> res = theQuery.getResultList();
+		return res;
+	}
+
+	@Override
+	public List<Course> getStudentCourse(String userName) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

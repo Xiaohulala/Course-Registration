@@ -1,0 +1,23 @@
+package com.hu.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.hu.dao.CourseDao;
+
+@Controller
+@RequestMapping("/students")
+public class StudentController {
+	
+	@Autowired
+	private CourseDao courseDao;
+	
+	@GetMapping("/")
+	public String showStudentsHome(Model theModel) {
+		
+		return "students-home";
+	}
+}

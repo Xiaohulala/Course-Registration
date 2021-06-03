@@ -12,9 +12,4 @@ public class HomeController {
 		return "home";
 	}
 	
-	@GetMapping("/students")
-	public String showStudentsHome() {
-		return "students-home";
-	}
-	
 }

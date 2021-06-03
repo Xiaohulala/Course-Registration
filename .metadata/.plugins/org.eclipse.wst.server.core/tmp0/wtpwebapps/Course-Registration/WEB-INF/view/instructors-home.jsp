@@ -17,7 +17,7 @@
 	
 	<div id="wrapper">
 		<div id="header">
-			<h2>Course Management</h2>
+			<h2>My Course Management</h2>
 		</div>
 	</div>
 	
@@ -35,7 +35,7 @@
 				   
 			
 			<!-- Search bar -->
-			<form:form action="search" method="GET">
+			<form:form action="${pageContext.request.contextPath}/instructors/search" method="GET">
 				Search Course: <input type="text" name="theSearchName"/>
 				<input type="submit" value="Search" class="add-button"/>
 			</form:form>
