@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.hu.entity.Course;
 import com.hu.entity.Instructor;
+import com.hu.entity.Student;
 
 @Repository
 public class CourseDaoImpl implements CourseDao{
@@ -56,14 +57,14 @@ public class CourseDaoImpl implements CourseDao{
 		} else {
 			theQuery = currentSession.createQuery("from Course", Course.class);
 		}
-		List<Course> res = theQuery.getResultList();
-		return res;
+		return theQuery.getResultList();
 	}
 
 	@Override
-	public List<Course> getStudentCourse(String userName) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Course> getStudentCourse(int id) {
+		Session currentSession = sessionFactory.getCurrentSession();
+		Student student = currentSession.get(Student.class, id);
+		return student.getCourses();
 	}
 
 }

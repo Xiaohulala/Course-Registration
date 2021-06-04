@@ -5,7 +5,7 @@
 <html>
 <head>
 
-	<title>List Customers</title>
+	<title>My Course Management</title>
 	<link type="text/css"
 		  rel="stylesheet"
 		  href="${pageContext.request.contextPath}/resources/css/style.css"/>

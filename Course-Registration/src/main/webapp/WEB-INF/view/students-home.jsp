@@ -5,7 +5,7 @@
 <html>
 <head>
 
-	<title>List Customers</title>
+	<title>Course Offerings</title>
 	<link type="text/css"
 		  rel="stylesheet"
 		  href="${pageContext.request.contextPath}/resources/css/style.css"/>
@@ -14,7 +14,12 @@
 	<form:form action="${pageContext.request.contextPath}/logout" method="POST">
 		<input type="submit" value="Logout"/>
 	</form:form>
+	<div id="wrapper">
+			<!-- My course management -->
+			<a href="${pageContext.request.contextPath}/students/myCourse"> My course Management</a>
+	</div>
 	
+			
 	<div id="wrapper">
 		<div id="header">
 			<h2>Course Offerings</h2>
@@ -24,14 +29,6 @@
 	<div id="container">
 		<div id="content">
 		
-			<!-- contruct a "myCourse" link -->
-			<c:url var="myCourse" value="/students/myCourse">
-				<c:param name="username" value="${username}"/>
-			</c:url>
-			
-			<!-- My course management -->
-			<a href="myCourse"> My course Management</a>
-			
 			<!-- Search bar -->
 			<form:form action="${pageContext.request.contextPath}/students/search" method="GET">
 				Search Course: <input type="text" name="theSearchName"/>

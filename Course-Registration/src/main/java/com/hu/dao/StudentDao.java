@@ -3,8 +3,7 @@ package com.hu.dao;
 import com.hu.entity.Student;
 
 public interface StudentDao {
-	public Student findStudentByFirstName(String theFirstName);
-	public Student findStudentByLastName(String theLastName);
+	public int findIdByUsername(String theFirstName);
 	void save(Student student);
 
 }

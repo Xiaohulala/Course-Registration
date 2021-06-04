@@ -41,8 +41,8 @@ public class CourseServiceImpl implements CourseService{
 
 	@Override
 	@Transactional
-	public List<Course> getStudentCourse(String userName) {
-		return courseDao.getStudentCourse(userName);
+	public List<Course> getStudentCourse(int id) {
+		return courseDao.getStudentCourse(id);
 	}
 
 }

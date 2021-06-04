@@ -1,12 +1,18 @@
 package com.hu.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -24,6 +30,14 @@ public class Course {
 	@ManyToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="instructor_id")
 	private Instructor instructor;
+	
+	@ManyToMany(fetch=FetchType.EAGER, cascade={CascadeType.PERSIST, CascadeType.DETACH, CascadeType.REFRESH, CascadeType.MERGE})
+	@JoinTable(
+			name="course_student",
+			joinColumns=@JoinColumn(name="course_id"),
+			inverseJoinColumns=@JoinColumn(name="student_id")
+			)
+	private List<Student> students;
 	
 	// Constructor
 	public Course() {}
@@ -57,11 +71,30 @@ public class Course {
 	public void setInstructor(Instructor instructor) {
 		this.instructor = instructor;
 	}
+	
+
+	public List<Student> getStudents() {
+		return students;
+	}
+
+	public void setStudents(List<Student> students) {
+		this.students = students;
+	}
+	
+	// add a convenience method
+	public void addStudent(Student theStudent) {
+		if(students == null) 
+			students = new ArrayList<>();
+		students.add(theStudent);
+	}
 
 	//toString
 	@Override
 	public String toString() {
-		return "Course [id=" + id + ", name=" + name + ", instructor=" + instructor + "]";
+		return "Course [id=" + id + ", name=" + name + ", instructor=" + instructor + ", students=" + students + "]";
 	}
+
+	
+
 	
 }

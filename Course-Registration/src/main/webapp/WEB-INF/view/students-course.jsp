@@ -5,7 +5,7 @@
 <html>
 <head>
 
-	<title>List Customers</title>
+	<title>My Course Management</title>
 	<link type="text/css"
 		  rel="stylesheet"
 		  href="${pageContext.request.contextPath}/resources/css/style.css"/>
@@ -23,16 +23,6 @@
 	
 	<div id="container">
 		<div id="content">
-
-		
-			<!-- add courses -->
-			<form:form action="${pageContext.request.contextPath}/instructors/showFormForAddCourseForInstructor" 
-					   modelAttribute="userName"
-			           method="GET">
-			           
-				<input type="submit" value="Add a course" class="add-button"/>
-			</form:form>
-				   
 			
 			<!-- Search bar -->
 			<form:form action="${pageContext.request.contextPath}/instructors/search" method="GET">
@@ -52,7 +42,7 @@
 				<c:forEach var="tempCourse" items="${courses}">
 				
 					<!--  construct an "delete" link with course id-->
-					<c:url var="deleteLink" value="/instructors/delete">
+					<c:url var="deleteLink" value="/students/dropout">
 						<c:param name="courseId" value="${tempCourse.id}"/>
 					</c:url>
 					
@@ -61,7 +51,7 @@
 						<td>${tempCourse.name}</td>
 						<td>
 							<a href="${deleteLink}"
-							   onclick="if(!(confirm('Are you sure you want to delete this course?'))) return false">Delete</a>
+							   onclick="if(!(confirm('Are you sure you want to drop out this course?'))) return false">Drop out</a>
 						</td>
 					</tr>
 				</c:forEach>

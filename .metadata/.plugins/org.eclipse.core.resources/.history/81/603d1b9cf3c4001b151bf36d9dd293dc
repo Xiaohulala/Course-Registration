@@ -1,0 +1,5 @@
+package com.hu.service;
+
+public interface StudentService {
+
+}

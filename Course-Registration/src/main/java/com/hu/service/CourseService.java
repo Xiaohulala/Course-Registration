@@ -10,5 +10,5 @@ public interface CourseService {
 	void save(Course theCourse);
 	void deleteCourse(int courseId);
 	public List<Course> searchCourses(String searchName);
-	public List<Course> getStudentCourse(String userName);
+	public List<Course> getStudentCourse(int id);
 }

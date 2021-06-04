@@ -131,11 +131,10 @@ CREATE TABLE `reviews`(
 -- course_student
 DROP TABLE IF EXISTS `course_student`;
 CREATE TABLE `course_student`(
-	`id` int(11) NOT NULL AUTO_INCREMENT,
 	`course_id` int(11) NOT NULL,
-    `student_userName` varchar(45) NOT NULL,
+    `student_id` int(11) NOT NULL,
     
-    PRIMARY KEY(`id`),
+    PRIMARY KEY(`course_id`, `student_id`),
     
     CONSTRAINT `FK_COURSE_STUDENT_COURSE`
     FOREIGN KEY (`course_id`)
@@ -143,11 +142,11 @@ CREATE TABLE `course_student`(
     ON DELETE NO ACTION ON UPDATE NO ACTION,
     
     CONSTRAINT `FK_COURSE_STUDENT_STUDENT`
-    FOREIGN KEY (`student_userName`)
-    REFERENCES `students` (`email`)
+    FOREIGN KEY (`student_id`)
+    REFERENCES `students` (`id`)
     ON DELETE NO ACTION ON UPDATE NO ACTION
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `course_student` 
 VALUES 
-('1','1','lingrong@gmail.com');
+('1','1');
