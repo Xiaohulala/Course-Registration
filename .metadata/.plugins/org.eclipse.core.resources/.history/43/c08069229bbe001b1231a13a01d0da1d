@@ -1,7 +1,0 @@
-package com.hu.entity;
-
-@Entity
-@Table(name="course_student")
-public class CourseStudent {
-
-}

@@ -40,6 +40,8 @@
 				<tr>
 					<th>Course ID</a></th>
 					<th>Course Name</a></th>
+					<th>Course Rating</a></th>
+					<th>Course Instructor</a></th>
 					<th>Action</th>
 				</tr>
 				
@@ -47,15 +49,31 @@
 				<c:forEach var="tempCourse" items="${courses}">
 				
 					<!--  construct an "delete" link with course id-->
-					<c:url var="deleteLink" value="/instructors/delete">
+					<c:url var="enrollLink" value="/students/enroll">
+						<c:param name="courseId" value="${tempCourse.id}"/>
+					</c:url>
+					
+					<!--  construct a "review" link -->
+					<c:url var="reviewLink" value="/students/checkReviews">
 						<c:param name="courseId" value="${tempCourse.id}"/>
 					</c:url>
 					
 					<tr>
 						<td>${tempCourse.id}</td>
 						<td>${tempCourse.name}</td>
+						<c:if test="${tempCourse.rating == -1.0}">
+						   <td>Null</td>
+						</c:if>
+						<c:if test="${tempCourse.rating != -1.0}">
+						   <td>
+						   <a href="${reviewLink}">${tempCourse.rating}</a>
+						   </td>
+						</c:if>
+						
+						<td>${tempCourse.instructor}</td>
 						<td>
-							<a>Enroll</a>
+							<a href="${enrollLink}"
+								onclick="alert('Course Enrolled')">Enroll</a>
 						</td>
 					</tr>
 				</c:forEach>

@@ -45,6 +45,7 @@
 				<tr>
 					<th>Course ID</a></th>
 					<th>Course Name</a></th>
+					<th>Course Rating</a></th>
 					<th>Action</th>
 				</tr>
 				
@@ -59,6 +60,12 @@
 					<tr>
 						<td>${tempCourse.id}</td>
 						<td>${tempCourse.name}</td>
+						<c:if test="${tempCourse.rating == -1.0}">
+							<td>Null</td>>
+						</c:if>
+						<c:if test="${tempCourse.rating != -1.0}">
+							<td>${tempCouese.rating}</td>
+						</c:if>
 						<td>
 							<a href="${deleteLink}"
 							   onclick="if(!(confirm('Are you sure you want to delete this course?'))) return false">Delete</a>

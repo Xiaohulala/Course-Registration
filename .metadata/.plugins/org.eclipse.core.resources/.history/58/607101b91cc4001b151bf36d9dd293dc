@@ -1,6 +1,0 @@
-package com.hu.controllers;
-
-@Controller()
-public class StudentController {
-
-}

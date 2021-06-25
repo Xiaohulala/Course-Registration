@@ -1,7 +1,7 @@
 package com.hu.entity;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -30,7 +30,7 @@ public class Instructor {
 	private String email;
 	
 	@OneToMany(mappedBy="instructor", cascade=CascadeType.ALL)  //refers to the instructor property in Course
-	private List<Course> courses;
+	private Set<Course> courses;
 	
 	// constructors
 	public Instructor() {}
@@ -74,11 +74,11 @@ public class Instructor {
 		this.email = email;
 	}
 	
-	public List<Course> getCourses() {
+	public Set<Course> getCourses() {
 		return courses;
 	}
 
-	public void setCourses(List<Course> courses) {
+	public void setCourses(Set<Course> courses) {
 		this.courses = courses;
 	}
 
@@ -88,7 +88,6 @@ public class Instructor {
 		return "Instructor [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
 				+ "]";
 	};
-	
 	
 	
 	@Override
@@ -116,7 +115,7 @@ public class Instructor {
 	// add convenience methods for bi-directional relationship
 	public void add(Course tempCourse) {
 		if(courses == null)
-			courses = new ArrayList<>();
+			courses = new HashSet<>();
 		
 		courses.add(tempCourse);
 		tempCourse.setInstructor(this);

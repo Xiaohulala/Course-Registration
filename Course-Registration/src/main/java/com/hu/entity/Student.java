@@ -1,6 +1,6 @@
 package com.hu.entity;
 
-import java.util.List;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -11,6 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.JoinColumn;
 
@@ -38,7 +39,10 @@ public class Student {
 			joinColumns=@JoinColumn(name="student_id"),
 			inverseJoinColumns=@JoinColumn(name="course_id")
 			)
-	private List<Course> courses;
+	private Set<Course> courses;
+	
+	@OneToMany(mappedBy="student", cascade= {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
+	private Set<Review> reviews;
 	
 	// constructors
 	public Student() {}
@@ -83,11 +87,11 @@ public class Student {
 	}
 
 	
-	public List<Course> getCourses() {
+	public Set<Course> getCourses() {
 		return courses;
 	}
 
-	public void setCourses(List<Course> courses) {
+	public void setCourses(Set<Course> courses) {
 		this.courses = courses;
 	}
 
@@ -100,6 +104,28 @@ public class Student {
 	public String toString() {
 		return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
 				+ ", courses=" + courses + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + id;
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Student other = (Student) obj;
+		if (id != other.id)
+			return false;
+		return true;
 	}
 
 	

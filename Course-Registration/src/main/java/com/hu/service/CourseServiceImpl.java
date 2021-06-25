@@ -1,6 +1,6 @@
 package com.hu.service;
 
-import java.util.List;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.hu.dao.CourseDao;
 import com.hu.entity.Course;
 import com.hu.entity.Instructor;
+import com.hu.entity.Student;
 
 @Service
 public class CourseServiceImpl implements CourseService{
@@ -17,7 +18,7 @@ public class CourseServiceImpl implements CourseService{
 	
 	@Transactional
 	@Override
-	public List<Course> getCourses(Instructor theInstructor) {
+	public Set<Course> getCourses(Instructor theInstructor) {
 		return courseDao.getCourses(theInstructor);
 	}
 
@@ -35,14 +36,33 @@ public class CourseServiceImpl implements CourseService{
 
 	@Override
 	@Transactional
-	public List<Course> searchCourses(String searchName) {
+	public Set<Course> searchCourses(String searchName) {
 		return courseDao.searchCourses(searchName);
 	}
 
 	@Override
 	@Transactional
-	public List<Course> getStudentCourse(int id) {
+	public Set<Course> getStudentCourse(int id) {
 		return courseDao.getStudentCourse(id);
 	}
+
+	@Override
+	@Transactional
+	public Course getCoursebyId(int courseId) {
+		return courseDao.getCoursebyId(courseId);
+	}
+
+	@Override
+	@Transactional
+	public void addCourseByStudent(Course course, Student student) {
+		courseDao.addCourseByStudent(course, student);
+	}
+
+	@Override
+	@Transactional
+	public void deleteStudentFromCourse(Student student, Course course) {
+		courseDao.deleteStudentFromCourse(student, course);		
+	}
+	
 
 }

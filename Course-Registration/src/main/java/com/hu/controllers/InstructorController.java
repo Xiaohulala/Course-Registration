@@ -1,8 +1,8 @@
 package com.hu.controllers;
 
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,12 +15,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttributes;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.hu.dao.CourseDao;
-import com.hu.dao.InstructorDao;
+
 import com.hu.entity.Course;
-import com.hu.entity.Instructor;
 import com.hu.service.CourseService;
 import com.hu.service.InstructorService;
 
@@ -38,7 +35,7 @@ public class InstructorController {
 	public String showInstructorsHome(Model theModel, HttpServletRequest request, ModelMap modelMap) {
 		String userName = (String) request.getSession().getAttribute("username");
 
-		List<Course> theCourses = courseService.getCourses(instructorService.findInstructorByUserName(userName)) ;
+		Set<Course> theCourses = courseService.getCourses(instructorService.findInstructorByUserName(userName)) ;
 		
 		theModel.addAttribute("courses", theCourses);
 		modelMap.addAttribute("username", userName);
@@ -72,9 +69,13 @@ public class InstructorController {
 	}
 	
 	@GetMapping("/search")
-	public String searchCourse(@RequestParam("theSearchName") String searchName, Model theModel) {
-		List<Course> courses = courseService.searchCourses(searchName);
-		theModel.addAttribute("courses", courses);
+	public String searchCourse(@RequestParam("theSearchName") String searchName, Model theModel, ModelMap modelMap) {
+		Set<Course> courses = courseService.searchCourses(searchName);
+		Set<Course> myCourses = new HashSet<>();
+		for(Course c : courses)
+			if(c.getInstructorEmail().equals(modelMap.getAttribute("username")))
+				myCourses.add(c);
+		theModel.addAttribute("courses", myCourses);
 		return "instructors-home";
 	}
 }

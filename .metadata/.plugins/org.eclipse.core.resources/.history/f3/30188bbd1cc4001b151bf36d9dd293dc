@@ -1,9 +1,0 @@
-package com.hu.controllers;
-
-import org.springframework.stereotype.Controller;
-
-@Controller
-@RequestMapping("/students")
-public class StudentController {
-
-}

@@ -1,6 +1,0 @@
-package com.hu.user;
-@Controller
-@RequestMapping("/register")
-public class RegController {
-
-}

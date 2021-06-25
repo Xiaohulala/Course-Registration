@@ -1,13 +1,14 @@
 package com.hu.dao;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.hu.entity.Course;
 import com.hu.entity.Instructor;
@@ -19,17 +20,19 @@ public class CourseDaoImpl implements CourseDao{
 	private SessionFactory sessionFactory;
 	
 	@Override
-	public List<Course> getCourses(Instructor theInstructor) {
+	public Set<Course> getCourses(Instructor theInstructor) {
 		Session currentSession = sessionFactory.getCurrentSession();
 		Query<Course> theQuery = currentSession.createQuery("from Course c where instructor=:ins", Course.class);
 		theQuery.setParameter("ins", theInstructor);	
-		List<Course> courses = null;
+		Set<Course> sets = new HashSet<>();
 		try {
-			courses = theQuery.getResultList();
+			List<Course> courses = theQuery.getResultList();
+			for(Course c : courses) 
+				sets.add(c);
+			
 		} catch(Exception e) {
-			courses = null;
 		}
-		return courses;
+		return sets;
 	}
 
 	@Override
@@ -48,7 +51,7 @@ public class CourseDaoImpl implements CourseDao{
 	}
 
 	@Override
-	public List<Course> searchCourses(String searchName) {
+	public Set<Course> searchCourses(String searchName) {
 		Session currentSession = sessionFactory.getCurrentSession();
 		Query theQuery = null;
 		if(searchName != null && searchName.trim().length() > 0) {
@@ -57,14 +60,38 @@ public class CourseDaoImpl implements CourseDao{
 		} else {
 			theQuery = currentSession.createQuery("from Course", Course.class);
 		}
-		return theQuery.getResultList();
+		List<Course> courses = theQuery.getResultList();
+		Set<Course> sets = new HashSet<>();
+		for(Course c : courses) 
+			sets.add(c);
+		return sets;
 	}
 
 	@Override
-	public List<Course> getStudentCourse(int id) {
+	public Set<Course> getStudentCourse(int id) {
 		Session currentSession = sessionFactory.getCurrentSession();
 		Student student = currentSession.get(Student.class, id);
 		return student.getCourses();
+	}
+
+	@Override
+	public Course getCoursebyId(int courseId) {
+		Session currentSession = sessionFactory.getCurrentSession();
+		return currentSession.get(Course.class, courseId);
+	}
+	
+	@Override
+	public void addCourseByStudent(Course course, Student student) {
+		Session currentSession = sessionFactory.getCurrentSession();
+		course.addStudent(student);
+		currentSession.saveOrUpdate(course);
+	}
+
+	@Override
+	public void deleteStudentFromCourse(Student student, Course course) {
+		Session currentSession = sessionFactory.getCurrentSession();
+		course.deleteStudent(student);
+		currentSession.saveOrUpdate(course);
 	}
 
 }

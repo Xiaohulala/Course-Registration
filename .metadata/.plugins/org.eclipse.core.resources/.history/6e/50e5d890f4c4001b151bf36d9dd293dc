@@ -1,8 +1,0 @@
-package com.hu.service;
-
-import com.hu.entity.Student;
-
-public interface StudentService {
-	public Student findIdByUsername(String theFirstName);
-	void save(Student student);
-}

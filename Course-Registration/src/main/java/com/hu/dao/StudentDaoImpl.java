@@ -13,15 +13,11 @@ public class StudentDaoImpl implements StudentDao{
 	@Autowired
 	private SessionFactory sessionFactory;
 
-
-
 	@Override
 	public void save(Student theStudent) {
 		Session currentSession = sessionFactory.getCurrentSession();
 		currentSession.saveOrUpdate(theStudent);
 	}
-
-
 
 	@Override
 	public int findIdByUsername(String username) {
@@ -31,5 +27,15 @@ public class StudentDaoImpl implements StudentDao{
 		Student student = theQuery.getSingleResult();
 		return student.getId();
 	}
+
+	@Override
+	public Student findStudentByUsername(String username) {
+		Session currentSession = sessionFactory.getCurrentSession();
+		Query<Student> theQuery = currentSession.createQuery("from Student where email=:username", Student.class);
+		theQuery.setParameter("username", username);
+		return theQuery.getSingleResult();
+	}
+
+
 
 }

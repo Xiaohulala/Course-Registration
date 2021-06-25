@@ -1,7 +1,0 @@
-package com.hu.entity;
-
-@Entity
-@Table(name="reviews")
-public class Review {
-
-}

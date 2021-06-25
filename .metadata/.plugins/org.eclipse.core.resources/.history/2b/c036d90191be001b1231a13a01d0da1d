@@ -1,7 +1,0 @@
-package com.hu.validation;
-
-import javax.validation.ConstraintValidator;
-
-public class FieldMatchValidator implements ConstraintValidator<FieldMatch, Object>{
-
-}

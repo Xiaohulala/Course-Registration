@@ -1,7 +1,8 @@
 package com.hu.entity;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -14,6 +15,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -37,7 +39,11 @@ public class Course {
 			joinColumns=@JoinColumn(name="course_id"),
 			inverseJoinColumns=@JoinColumn(name="student_id")
 			)
-	private List<Student> students;
+	private Set<Student> students;
+	
+	@OneToMany(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
+	@JoinColumn(name="course_id")
+	private Set<Review> reviews;
 	
 	// Constructor
 	public Course() {}
@@ -45,7 +51,6 @@ public class Course {
 	public Course(String name) {
 		this.name = name;
 	}
-
 
 	// getters & setters
 	public int getId() {
@@ -64,8 +69,11 @@ public class Course {
 		this.name = name;
 	}
 
-	public Instructor getInstructor() {
-		return instructor;
+	public String getInstructor() {
+		return instructor.getFirstName() + " " + instructor.getLastName();
+	}
+	public String getInstructorEmail() {
+		return instructor.getEmail();
 	}
 
 	public void setInstructor(Instructor instructor) {
@@ -73,19 +81,40 @@ public class Course {
 	}
 	
 
-	public List<Student> getStudents() {
+	public Set<Student> getStudents() {
 		return students;
 	}
 
-	public void setStudents(List<Student> students) {
+	public void setStudents(Set<Student> students) {
 		this.students = students;
+	}
+	
+	public double getRating() {
+		if(reviews.size() == 0) return -1.0;
+		double total = 0;
+		for(Review r : reviews) {
+			total += r.getRating();
+		}
+		System.out.print(total);	
+		return Math.round((total / reviews.size()) * 100.0 / 100.0);
 	}
 	
 	// add a convenience method
 	public void addStudent(Student theStudent) {
 		if(students == null) 
-			students = new ArrayList<>();
+			students = new HashSet<>();
 		students.add(theStudent);
+	}
+	
+	public void deleteStudent(Student student) {
+		System.out.println(students.remove(student));
+	}
+	
+	public void addReview(Review review) {
+		if(reviews == null) {
+			reviews = new HashSet<>();
+		}
+		reviews.add(review);
 	}
 
 	//toString
